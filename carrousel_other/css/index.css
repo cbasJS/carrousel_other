@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background-color: #90AFC5;
+    background: url("../img/leaves-pattern.png");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+    max-width: 100%;
+}
+header {
+    background: #336b87;
+    height: 4.666rem;
+}
+section {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    /* margin: 5px 0; */
+    background: rgba(187, 163, 187, 0.459);
+}
+.first {
+    position: relative;
+    top: -40px;
+    margin-bottom: -40px;
+}
+.box {
+    display: flex;    
+    align-self: center;
+    position: relative;
+}
+.box .btn {
+    cursor: pointer;
+    background-color: rgba(187, 163, 187, 0.7);
+    padding: 1.5% 1.5%;
+    border: none;
+}
+.box .btn:hover {
+    background-color: rgba(187, 163, 187, 1);
+}
+.box .btnAnt {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 15px);
+    margin-left: 10px;
+}
+.box .btnSig {
+    position: absolute;
+    right: 0;
+    /* Calculo */
+    top: calc(50% - 15px);
+    margin-right: 10px;
+}
+.box img {
+    width: 100%;
+    height: 400px;
+}
+article h1 {
+    font-family: "Times New Roman", Arial;
+	font-size: 28px;
+	font-style: initial;
+	font-weight: bold;
+	color:#4281ed;
+	text-align: center;
+	text-transform: capitalize;
+}
+article p {
+    color: #2e8b57;
+    text-align: justify;
+    margin: 15px 25px;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+article p > b {
+    color: #4281ed;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #2A3132;
+    height: 4.666rem;
+}
+footer p {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: slategrey;
+}
+@media all and (max-width: 768px) {
+    .box img {
+        height: auto;
+    }
+}
